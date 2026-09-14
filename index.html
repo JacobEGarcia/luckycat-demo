@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Cat - product demo</title>
+<meta name="description" content="Interactive 3D product demo for Lucky Cat - the voice assistant that brings you luck.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stage"></canvas>
+<div class="vignette"></div>
+
+<header class="hud hud-top">
+  <div class="wordmark">LUCKY<span class="gold">CAT</span></div>
+  <div class="sub">PRODUCT CONCEPT</div>
+</header>
+
+<div class="hud hud-tag" id="tagline">
+  <h1>The voice assistant that<br>brings you luck.</h1>
+  <p>An ambient computer inside a maneki-neko.</p>
+</div>
+
+<div class="hud hud-fortune" id="fortune"></div>
+
+<nav class="hud hud-shots" id="shots" aria-label="camera shots"></nav>
+
+<footer class="hud hud-bottom">
+  <div class="hint">drag to orbit &middot; scroll for shots &middot; click the paw</div>
+  <button class="speak" id="speak" type="button">SPEAK TO THE CAT</button>
+</footer>
+
+<script src="three.min.js"></script>
+<script src="demo.js"></script>
+</body>
+</html>
