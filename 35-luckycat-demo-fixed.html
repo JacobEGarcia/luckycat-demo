@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Cat - product demo</title>
+<meta name="description" content="Interactive 3D product demo for Lucky Cat - the voice assistant that brings you luck.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="worldnav" aria-label="Lucky Cat world"><a href="https://jacobegarcia.github.io/luckycat/">PRODUCT</a><a href="https://jacobegarcia.github.io/luckycat-proof/">PROOF</a><a aria-current="page" href="https://jacobegarcia.github.io/luckycat-demo/">DEMO</a><a href="https://jacobegarcia.github.io/luckycat/#wishlist">WAITLIST</a></nav>
+<section class="prooflead"><div class="proofcopy"><span class="kicker">HISTORICAL BENCH TEST · SEPTEMBER 2026</span><h1>The build before the render.</h1><p>This is footage from an earlier Raspberry Pi 5 bench test. Its microphones and speakers were tested, and the voice loop used Gemini over the internet. All Raspberry Pis were returned on September 22. Work now continues on laptops; this footage is not a current in-hand cat device.</p><a href="https://jacobegarcia.github.io/luckycat-proof/">READ THE BUILD LEDGER →</a></div><figure><video controls playsinline preload="metadata" src="assets/prototype-build.mp4"></video><figcaption>37 seconds · earlier real-hardware footage · Pi hardware returned September 22</figcaption></figure></section>
+<section class="concept-intro"><span>INTERACTIVE CONCEPT STUDY</span><p>Below: explore the intended product object. This is a 3D concept, clearly separate from the physical proof above.</p></section>
+<canvas id="stage"></canvas>
+<div class="vignette"></div>
+
+<header class="hud hud-top">
+  <div class="wordmark">LUCKY<span class="gold">CAT</span></div>
+  <div class="sub">PRODUCT CONCEPT</div>
+</header>
+
+<div class="hud hud-tag" id="tagline">
+  <h2>The voice assistant that<br>brings you luck.</h2>
+  <p>An ambient computer inside a maneki-neko.</p>
+</div>
+
+<div class="hud hud-fortune" id="fortune"></div>
+
+<nav class="hud hud-shots" id="shots" aria-label="camera shots"></nav>
+
+<footer class="hud hud-bottom">
+  <div class="hint">drag to orbit &middot; scroll for shots &middot; click the paw</div>
+  <button class="speak" id="speak" type="button">SPEAK TO THE CAT</button>
+</footer>
+
+<script src="three.min.js"></script>
+<script src="demo.js"></script>
+<aside class="truthnote"><b>EARLIER TEST</b> Pi + Gemini cloud, internet required; Pi returned<br><b>NOW</b> laptop voice work · product body still a concept</aside>
+</body>
+</html>
